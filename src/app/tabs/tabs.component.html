@@ -1,0 +1,50 @@
+<div class="main">
+  <div class="content">
+    <div class="pageTitle">
+      <h2>Tabs</h2>
+    </div>
+
+    <!--start Headings-->
+    <div class="article">
+      <p class="font-sm">To create tabs you need to add a <code class="class">tabStyle</code> class to the <code class="tag">&lt;div&gt;</code> tag. Tab contains two parts - the <code class="class">tabNav</code> for switching through tabs and the <code class="class">tabContent</code> for adding the needed content to the respective tabs.</p>
+      <div class="example contentBorder mb-30">
+        <div class="tabStyle">
+          <ul class="tabNav">
+            <li (click)="onChangeTab()" [class.active]="!tab"><a>Tab 1</a></li>
+            <li (click)="onChangeTab('tab2')" [class.active]="tab === 'tab2'"><a>Tab 2</a></li>
+            <li (click)="onChangeTab('tab3')" [class.active]="tab === 'tab3'"><a>Tab 3</a></li>
+          </ul>
+          <div class="tabContent" [ngSwitch]="tab">
+            <div *ngSwitchDefault>
+              <h4 class="mb-10">Tab 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores
+                autem cum deleniti dicta distinctio eligendi est, facilis harum id, in non nulla
+                obcaecati odit provident quae quam quod reiciendis soluta totam ullam unde veritatis
+                voluptas voluptatibus? Amet aspernatur atque dolore maxime minus modi numquam quaerat
+                reiciendis rerum totam.</p>
+            </div>
+            <div *ngSwitchCase="'tab2'">
+              <h4 class="mb-10">Tab 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum eius ipsum itaque
+                mollitia neque nesciunt non quis voluptate voluptatum.</p>
+            </div>
+            <div *ngSwitchCase="'tab3'">
+              <h4 class="mb-10">Tab 3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex, ratione. Adipisci,
+                cum debitis dolor ducimus exercitationem impedit itaque libero odio, optio reiciendis
+                soluta suscipit ut? Consequuntur cum error esse id ipsa ipsum minus odio, odit
+                reiciendis repellendus, sed ut voluptates voluptatum? Accusantium ad animi architecto
+                blanditiis cum cumque dicta dolore earum eius esse eveniet inventore ipsum, iste laborum
+                libero minima nam natus officiis omnis quidem quod sit sunt tempore. Beatae dolorem
+                officia praesentium quaerat repudiandae sint totam vitae voluptate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre><code #code1 class="html">&lt;div class="tabStyle"&gt;<br />   &lt;ul class="tabNav"&gt;<br />      &lt;li (click)="onChangeTab()" [class.active]="!tab"&gt;&lt;a&gt;Tab 1&lt;/a&gt;&lt;/li&gt;<br />      &lt;li (click)="onChangeTab('tab2')" [class.active]="tab === 'tab2'"&gt;&lt;a&gt;Tab 2&lt;/a&gt;&lt;/li&gt;<br />      &lt;li (click)="onChangeTab('tab3')" [class.active]="tab === 'tab3'"&gt;&lt;a&gt;Tab 3&lt;/a&gt;&lt;/li&gt;<br />   &lt;/ul&gt;<br />   &lt;div class="tabContent" [ngSwitch]="tab"&gt;<br />      &lt;div *ngSwitchDefault&gt;<br />         &lt;h4 class="mb-10"&gt;Tab 1&lt;/h4&gt;<br />         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores<br />            autem cum deleniti dicta distinctio eligendi est, facilis harum id, in non nulla<br />            obcaecati odit provident quae quam quod reiciendis soluta totam ullam unde veritatis<br />            voluptas voluptatibus? Amet aspernatur atque dolore maxime minus modi numquam quaerat<br />            reiciendis rerum totam.&lt;/p&gt;<br />      &lt;/div&gt;<br />      &lt;div *ngSwitchCase="'tab2'"&gt;<br />         &lt;h4 class="mb-10"&gt;Tab 2&lt;/h4&gt;<br />         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum eius ipsum itaque<br />            mollitia neque nesciunt non quis voluptate voluptatum.&lt;/p&gt;<br />      &lt;/div&gt;<br />      &lt;div *ngSwitchCase="'tab3'"&gt;<br />         &lt;h4 class="mb-10"&gt;Tab 3&lt;/h4&gt;<br />         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex, ratione. Adipisci,<br />            cum debitis dolor ducimus exercitationem impedit itaque libero odio, optio reiciendis<br />            soluta suscipit ut? Consequuntur cum error esse id ipsa ipsum minus odio, odit<br />            reiciendis repellendus, sed ut voluptates voluptatum? Accusantium ad animi architecto<br />            blanditiis cum cumque dicta dolore earum eius esse eveniet inventore ipsum, iste laborum<br />            libero minima nam natus officiis omnis quidem quod sit sunt tempore. Beatae dolorem<br />            officia praesentium quaerat repudiandae sint totam vitae voluptate.&lt;/p&gt;<br />      &lt;/div&gt;<br />   &lt;/div&gt;<br />&lt;/div&gt;</code></pre>
+    </div>
+    <!--end Headings-->
+
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+.mat-dialog-container {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.dialogStyle {
+  width: 570px;
+
+  .dialogHeader {
+    height: 60px;
+    padding: 0 30px;
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    @include linearGradient(#2ea1f8, #1991eb);
+
+    .dialogClose {
+      font-size: 10px;
+      color: rgba(#fff,0.4);
+    }
+  }
+
+  .dialogBody {
+    padding: 40px;
+  }
+  .dialogMeta {
+    height: 60px;
+    padding: 0px 28px;
+    text-align: center;
+    background-color: #f0f3f8;
+  }
+
+  &.largeDialog {
+    width: 960px;
+  }
+}

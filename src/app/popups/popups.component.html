@@ -1,0 +1,21 @@
+<div class="main">
+	<div class="content">
+		<div class="pageTitle">
+			<h2>Popup</h2>
+		</div>
+
+		<!--start Headings-->
+		<div class="article">
+			<p class="font-sm">To create a popup you need to use mat-dialog component which can be found <a class="link" target="_blank"
+					href="https://material.angular.io/components/dialog/overview">here.</a></p>
+			<div class="example contentBorder mb-30">
+				<button class="btn white" mat-button (click)="openDialog()">Open Dialog</button>
+				<button class="btn white" mat-button (click)="openDialogLg()">Open Large Dialog</button>
+			</div>
+			<pre><code #code1 class="html">&lt;div class="dialogStyle"&gt;<br />    &lt;div class="dialogHeader flex justify-space-between align-center"&gt;<br />        &lt;h4&gt;Dialog Header&lt;/h4&gt;<br />        &lt;a class="dialogClose" (click)="dialogRef.close()"&gt;&lt;i aria-hidden="true" class="icon-delete"&gt;&lt;/i&gt;&lt;/a&gt;<br />    &lt;/div&gt;<br />    &lt;div class="dialogBody"&gt;<br />        &lt;p class="text-dark"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />          cum debitis dolor ducimus exercitationem impedit itaque libero odio, optio reiciendis<br />          soluta suscipit ut? Consequuntur cum error esse id ipsa ipsum minus odio.&lt;/p&gt;<br />    &lt;/div&gt;<br />    &lt;div class="dialogMeta flex justify-space-between align-center"&gt;<br />        &lt;button class="btn white" (click)="dialogRef.close()"&gt;Cancel&lt;/button&gt;<br />        &lt;button class="btn green" (click)="dialogRef.close()"&gt;Done&lt;/button&gt;<br />    &lt;/div&gt;<br />&lt;/div&gt;</code></pre>
+		</div>
+		<!--end Headings-->
+
+	</div>
+</div>
+

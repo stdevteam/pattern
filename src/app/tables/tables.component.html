@@ -1,0 +1,236 @@
+<div class="main">
+	<div class="content">
+		<div class="pageTitle">
+			<h2>Tables</h2>
+		</div>
+
+		<!--start Headings-->
+		<div class="article">
+			<p class="font-sm">Tables are defined with the <code class="tag">&lt;table&gt;</code> tag.
+				Each table row is defined with the <code class="tag" e>&lt;tr&gt;</code> tag. A table header is defined with the <code class="tag">&lt;th&gt;</code> tag. A table data/cell is defined with the <code class="tag">&lt;td&gt;</code> tag.</p>
+		</div>
+		<!--end Headings-->
+
+		<div class="article last-child">
+			<h3 class="mb-30">Examples</h3>
+			<div class="mb-30">
+				<p>To create a table with the following style you need to add <code class="class">noStyle</code> class to <code class="tag">&lt;table&gt;</code> tag. </p>
+				<div class="example contentBorder mb-30">
+					<table class="noStyle mt-20">
+						<thead>
+						<tr>
+							<th class="col-2">ID</th>
+							<th class="col-7">Description</th>
+							<th class="col-3">Start time</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>
+								<div class="field">
+									<input type="text" value="1"/>
+								</div>
+							</td>
+							<td>
+								<div class="field">
+									<input type="text" value="Breakfast"/>
+								</div>
+							</td>
+							<td>
+								<div class="field">
+									<input type="text" value="630"/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="field">
+									<input type="text" value="2"/>
+								</div>
+							</td>
+							<td>
+								<div class="field">
+									<input type="text" value="Breakfast"/>
+								</div>
+							</td>
+							<td>
+								<div class="field">
+									<input type="text" value="630"/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="field">
+									<input type="text" value="3"/>
+								</div>
+							</td>
+							<td>
+								<div class="field">
+									<input type="text" value="Breakfast"/>
+								</div>
+							</td>
+							<td>
+								<div class="field">
+									<input type="text" value="630"/>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<pre><code #code7 class="html">&lt;table class="noStyle"&gt;<br />    &lt;thead&gt;<br />    &lt;tr&gt;<br />        &lt;th class="col-2"&gt;ID&lt;/th&gt;<br />        &lt;th class="col-7"&gt;Description&lt;/th&gt;<br />        &lt;th class="col-3"&gt;Start time&lt;/th&gt;<br />    &lt;/tr&gt;<br />    &lt;/thead&gt;<br />    &lt;tbody&gt;<br />    &lt;tr&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="1"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="Breakfast"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="630"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />    &lt;/tr&gt;<br />    &lt;tr&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="2"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="Breakfast"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="630"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />    &lt;/tr&gt;<br />    &lt;tr&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="3"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="Breakfast"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />        &lt;td&gt;<br />            &lt;div class="field"&gt;<br />                &lt;input type="text" value="630"/&gt;<br />            &lt;/div&gt;<br />        &lt;/td&gt;<br />    &lt;/tr&gt;<br />    &lt;/tbody&gt;<br />&lt;/table&gt;</code></pre>
+			</div>
+
+			<div class="mb-50">
+				<p>To create a table with the following style you need to add <code class="class">tableStyle</code> class to table tag.</p>
+				<div class="example contentBorder mb-30">
+					<table class="tableStyle">
+						<thead>
+						<tr>
+							<th class="col-5">Function</th>
+							<th class="col-3">Bump Pad</th>
+							<th class="col-4">Keyboard Shortcut</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Home Screen</td>
+							<td>Some content</td>
+							<td>Some content</td>
+						</tr>
+						<tr>
+							<td>Next Screen</td>
+							<td>Some content</td>
+							<td>Some content</td>
+						</tr>
+						<tr>
+							<td>Previous Screen</td>
+							<td>Some content</td>
+							<td>Some content</td>
+						</tr>
+						<tr>
+							<td>Previous Screen</td>
+							<td>Some content</td>
+							<td>Some content</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<pre><code #code9 class="html">&lt;table class="tableStyle"&gt;<br />    &lt;thead&gt;<br />        &lt;tr&gt;<br />            &lt;th class="col-5"&gt;Function&lt;/th&gt;<br />            &lt;th class="col-3"&gt;Bump Pad&lt;/th&gt;<br />            &lt;th class="col-4"&gt;Keyboard Shortcut&lt;/th&gt;<br />        &lt;/tr&gt;<br />    &lt;/thead&gt;<br />    &lt;tbody&gt;<br />        &lt;tr&gt;<br />            &lt;td&gt;Home Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />        &lt;/tr&gt;<br />        &lt;tr&gt;<br />            &lt;td&gt;Next Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />        &lt;/tr&gt;<br />        &lt;tr&gt;<br />            &lt;td&gt;Previous Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />        &lt;/tr&gt;<br />        &lt;tr&gt;<br />            &lt;td&gt;Previous Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />        &lt;/tr&gt;<br />    &lt;/tbody&gt;<br />&lt;/table&gt;</code></pre>
+			</div>
+
+			<div class="mb-50">
+				<p>To add scroll in the table you need to add <code class="class">tableScroll</code> class to the <code class="tag">&lt;div&gt;</code> tag and add the <code class="attribute">style</code> with the needed height to the <code class="tag">&lt;div&gt;</code> tag which has <code class="attribute">slimScroll</code> attribute. In order to have the scroll feature in the table you need to install the following package from <a class="link" target="_blank" href="https://www.npmjs.com/package/ngx-slimscroll">here.</a></p>
+				<div class="example contentBorder mb-30">
+					<div class="tableScroll">
+						<div class="scroll" slimScroll style="height: 300px">
+							<table class="tableStyle">
+								<thead>
+								<tr>
+									<th class="col-5">Function</th>
+									<th class="col-3">Bump Pad</th>
+									<th class="col-4">Keyboard Shortcut</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>Home Screen</td>
+									<td>Some content</td>
+									<td>Some content</td>
+								</tr>
+								<tr>
+									<td>Next Screen</td>
+									<td>Some content</td>
+									<td>Some content</td>
+								</tr>
+								<tr>
+									<td>Previous Screen</td>
+									<td>Some content</td>
+									<td>Some content</td>
+								</tr>
+								<tr>
+									<td>Previous Screen</td>
+									<td>Some content</td>
+									<td>Some content</td>
+								</tr>
+								<tr>
+									<td>Previous Screen</td>
+									<td>Some content</td>
+									<td>Some content</td>
+								</tr>
+								<tr>
+									<td>Previous Screen</td>
+									<td>Some content</td>
+									<td>Some content</td>
+								</tr>
+								<tr>
+									<td>Previous Screen</td>
+									<td>Some content</td>
+									<td>Some content</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<pre><code #code10 class="html">&lt;div class="tableScroll"&gt;<br />   &lt;div class="scroll" slimScroll style="height: 300px"&gt;<br />      &lt;table class="tableStyle"&gt;<br />         &lt;thead&gt;<br />         &lt;tr&gt;<br />            &lt;th class="col-5"&gt;Function&lt;/th&gt;<br />            &lt;th class="col-3"&gt;Bump Pad&lt;/th&gt;<br />            &lt;th class="col-4"&gt;Keyboard Shortcut&lt;/th&gt;<br />         &lt;/tr&gt;<br />         &lt;/thead&gt;<br />         &lt;tbody&gt;<br />         &lt;tr&gt;<br />            &lt;td&gt;Home Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />         &lt;/tr&gt;<br />         &lt;tr&gt;<br />            &lt;td&gt;Next Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />         &lt;/tr&gt;<br />         &lt;tr&gt;<br />            &lt;td&gt;Previous Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />         &lt;/tr&gt;<br />         &lt;tr&gt;<br />            &lt;td&gt;Previous Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />         &lt;/tr&gt;<br />         &lt;tr&gt;<br />            &lt;td&gt;Previous Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />         &lt;/tr&gt;<br />         &lt;tr&gt;<br />            &lt;td&gt;Previous Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />         &lt;/tr&gt;<br />         &lt;tr&gt;<br />            &lt;td&gt;Previous Screen&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />            &lt;td&gt;Some content&lt;/td&gt;<br />         &lt;/tr&gt;<br />         &lt;/tbody&gt;<br />      &lt;/table&gt;<br />   &lt;/div&gt;<br />&lt;/div&gt;</code></pre>
+			</div>
+
+			<div>
+				<p>To create a table with the following style you need to add <code class="tag">table</code> class to <code class="tag">&lt;table&gt;</code> tag.</p>
+				<div class="example contentBorder mb-30">
+					<table border="0" class="table firstDark">
+						<thead>
+						<tr>
+							<th>Docket No.</th>
+							<th>Table No.</th>
+							<th>Clerk</th>
+							<th>Order Time</th>
+							<th>Location</th>
+							<th>Time Completed</th>
+							<th class="text-center">Order</th>
+							<th>Recall</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>1</td>
+							<td>UberEats</td>
+							<td>Claire</td>
+							<td>00:00am</td>
+							<td>DELIVERY</td>
+							<td>4:45 PM</td>
+							<td class="icon"><span class="icon-order"></span></td>
+							<td>Recall Order</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>UberEats</td>
+							<td>Claire</td>
+							<td>00:00am</td>
+							<td>DELIVERY</td>
+							<td>4:45 PM</td>
+							<td class="icon"><span class="icon-order"></span></td>
+							<td>Recall Order</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>UberEats</td>
+							<td>Claire</td>
+							<td>00:00am</td>
+							<td>DELIVERY</td>
+							<td>4:45 PM</td>
+							<td class="icon"><span class="icon-order"></span></td>
+							<td>Recall Order</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<pre><code #code12 class="html">&lt;table border="0" class="table firstDark"&gt;<br />    &lt;thead&gt;<br />        &lt;tr&gt;<br />            &lt;th&gt;Docket No.&lt;/th&gt;<br />            &lt;th&gt;Table No.&lt;/th&gt;<br />            &lt;th&gt;Clerk&lt;/th&gt;<br />            &lt;th&gt;Order Time&lt;/th&gt;<br />            &lt;th&gt;Location&lt;/th&gt;<br />            &lt;th&gt;Time Completed&lt;/th&gt;<br />            &lt;th class="text-center"&gt;Order&lt;/th&gt;<br />            &lt;th&gt;Recall&lt;/th&gt;<br />        &lt;/tr&gt;<br />    &lt;/thead&gt;<br />    &lt;tbody&gt;<br />        &lt;tr&gt;<br />            &lt;td&gt;1&lt;/td&gt;<br />            &lt;td&gt;UberEats&lt;/td&gt;<br />            &lt;td&gt;Claire&lt;/td&gt;<br />            &lt;td&gt;00:00am&lt;/td&gt;<br />            &lt;td&gt;DELIVERY&lt;/td&gt;<br />            &lt;td&gt;4:45 PM&lt;/td&gt;<br />            &lt;td class="icon"&gt;&lt;span class="icon-order"&gt;&lt;/span&gt;&lt;/td&gt;<br />            &lt;td&gt;Recall Order&lt;/td&gt;<br />        &lt;/tr&gt;<br />        &lt;tr&gt;<br />            &lt;td&gt;2&lt;/td&gt;<br />            &lt;td&gt;UberEats&lt;/td&gt;<br />            &lt;td&gt;Claire&lt;/td&gt;<br />            &lt;td&gt;00:00am&lt;/td&gt;<br />            &lt;td&gt;DELIVERY&lt;/td&gt;<br />            &lt;td&gt;4:45 PM&lt;/td&gt;<br />            &lt;td class="icon"&gt;&lt;span class="icon-order"&gt;&lt;/span&gt;&lt;/td&gt;<br />            &lt;td&gt;Recall Order&lt;/td&gt;<br />        &lt;/tr&gt;<br />        &lt;tr&gt;<br />            &lt;td&gt;2&lt;/td&gt;<br />            &lt;td&gt;UberEats&lt;/td&gt;<br />            &lt;td&gt;Claire&lt;/td&gt;<br />            &lt;td&gt;00:00am&lt;/td&gt;<br />            &lt;td&gt;DELIVERY&lt;/td&gt;<br />            &lt;td&gt;4:45 PM&lt;/td&gt;<br />            &lt;td class="icon"&gt;&lt;span class="icon-order"&gt;&lt;/span&gt;&lt;/td&gt;<br />            &lt;td&gt;Recall Order&lt;/td&gt;<br />        &lt;/tr&gt;<br />    &lt;/tbody&gt;<br />&lt;/table&gt;</code></pre>
+			</div>
+
+		</div>
+
+	</div>
+</div>

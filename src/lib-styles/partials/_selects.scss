@@ -1,0 +1,50 @@
+.mat-select {
+  line-height: 36px;
+  border: 1px solid #ced0da;
+  border-radius: 4px;
+  @include linearGradient(#ffffff, #f1f3f7);
+  width: 130px !important;
+  font-weight: 500;
+}
+
+.mat-select-value {
+  padding: 0 10px;
+}
+
+.mat-select-arrow-wrapper {
+  padding: 0 5px;
+  background-size: 10px;
+  position: relative;
+
+  &:after {
+    content: "\F107";
+    font: normal normal normal 14px/1 FontAwesome;
+    color:  rgba(0,0,0,.42);
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  .mat-select-arrow {
+    opacity: 0;
+  }
+}
+.mat-select-content {
+  .mat-option {
+    &.mat-active {
+      background: #f5f8fa !important;
+    }
+    &:hover:not(.mat-option-disabled) {
+      background: #f5f8fa;
+    }
+    &:focus:not(.mat-option-disabled) {
+      background: #f5f8fa;
+    }
+  }
+  &.mat-selected:not(.mat-option-multiple) {
+    //background: #f5f8fa !important;
+  }
+}
+

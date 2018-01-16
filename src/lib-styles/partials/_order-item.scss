@@ -1,0 +1,35 @@
+.itemStatus {
+  height: 24px;
+  line-height: 22px;
+  padding: 0 12px 0 8px;
+  background-color: #fff;
+  border: 1px solid #e6eaee;
+  border-radius: 4px;
+
+  i {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid transparent;
+
+    &.red {
+      border-color: $red;
+    }
+    &.green {
+      border-color: $green;
+    }
+    &.blue {
+      border-color: $blue;
+    }
+  }
+
+  span {
+    color: #3d4651;
+    font-weight: 200;
+    font-size: 12px;
+  }
+}

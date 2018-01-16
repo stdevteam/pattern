@@ -1,0 +1,247 @@
+<div class="main">
+	<div class="content">
+		<div class="pageTitle">
+			<h2>Form elements</h2>
+		</div>
+
+		<!--start Buttons-->
+		<div class="article">
+			<h3 class="mb-30">Buttons</h3>
+			<p class="font-sm">There are several types of buttons described in this library. To use them you need to add <code class="class">btn</code> class before the respective button name (e.g. white/blue/disabled/etc.) </p>
+			<div class="example contentBorder mb-30">
+				<button class="btn white">white</button>
+				<button class="btn grey">grey</button>
+				<button class="btn blue">blue</button>
+				<button class="btn green">green</button>
+				<button class="btn disabled">disabled</button>
+			</div>
+			<pre><code #code1 class="html">&lt;button class="btn white"&gt;white&lt;/button&gt;<br />&lt;button class="btn grey"&gt;grey&lt;/button&gt;<br />&lt;button class="btn blue"&gt;blue&lt;/button&gt;<br />&lt;button class="btn green"&gt;green&lt;/button&gt;<br />&lt;button class="btn disabled"&gt;disabled&lt;/button&gt;</code></pre>
+			<p class="pt-30 ">Buttons can be used with "+" character from the left side.</p>
+			<div class="example contentBorder mb-30">
+				<button class="btn green  leftplus"><span>+</span>with plus</button>
+			</div>
+			<pre><code #code2 class="html">&lt;button class="btn green  leftplus"&gt;&lt;span&gt;+&lt;/span&gt;with plus&lt;/button&gt;</code></pre>
+			<p class="pt-30 ">To use the fullwidth buttons you need to add <code class="class">fullWidth</code> class to the other classes </p>
+			<div class="example contentBorder mb-30">
+				<button class="btn blue fullWidth">full width</button>
+			</div>
+			<pre><code #code3 class="html">&lt;button class="btn blue fullWidth"&gt;full width&lt;/button&gt;</code></pre>
+
+		</div>
+		<!--end Buttons-->
+
+		<!--start Button Groups-->
+		<div class="article">
+			<h3 class="mb-30">Button Groups</h3>
+			<p class="font-sm">You can group a series of buttons together (on a single line) in a button group with the needed buttons.</p>
+			<div class="example contentBorder mb-30">
+				<ul class="flex">
+					<li class="flex">
+						<button class="nav-btn" disabled><i class="fa fa-backward" aria-hidden="true"></i></button>
+						<button class="nav-btn" disabled><i class="fa fa-play fa-flip-horizontal" aria-hidden="true"></i></button>
+					</li>
+					<li class="flex">
+						<button class="nav-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+						<button class="nav-btn"><i class="fa fa-forward" aria-hidden="true"></i></button>
+					</li>
+				</ul>
+			</div>
+			<pre><code #code4 class="html">&lt;ul class="flex"&gt;<br />    &lt;li class="flex"&gt;<br />        &lt;button class="nav-btn" disabled&gt;&lt;i class="fa fa-backward" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;<br />        &lt;button class="nav-btn" disabled&gt;&lt;i class="fa fa-play fa-flip-horizontal" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;<br />    &lt;/li&gt;<br />    &lt;li class="flex"&gt;<br />        &lt;button class="nav-btn"&gt;&lt;i class="fa fa-play" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;<br />        &lt;button class="nav-btn"&gt;&lt;i class="fa fa-forward" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;<br />    &lt;/li&gt;<br />&lt;/ul&gt;</code></pre>
+		</div>
+		<!--end Button Groups-->
+
+		<!--start selects-->
+		<div class="article">
+			<h3 class="mb-30">Selects</h3>
+			<p class="font-sm">To create a select field you need to use mat-select component which can be found <a class="link" target="_blank"
+					href="https://material.angular.io/components/select/overview">here.</a></p>
+			<div class="example contentBorder mb-30">
+				<mat-select placeholder="Select" name="select">
+					<mat-option [value]="1">option 1</mat-option>
+					<mat-option [value]="2">option 2</mat-option>
+					<mat-option [value]="3">option 3</mat-option>
+				</mat-select>
+			</div>
+			<pre><code #code5 class="html">&lt;mat-select placeholder="Select" name="select"&gt;<br />  &lt;mat-option [value]="1"&gt;option 1&lt;/mat-option&gt;<br />  &lt;mat-option [value]="2"&gt;option 2&lt;/mat-option&gt;<br />  &lt;mat-option [value]="3"&gt;option 3&lt;/mat-option&gt;<br />&lt;/mat-select&gt;</code></pre>
+		</div>
+		<!--end selects-->
+
+		<!--start Inputs-->
+		<div class="article">
+			<h3 class="mb-30">Inputs</h3>
+			<p class="font-sm">There are two types of inputs described in this library - Simple and Quantity inputs. </p>
+			<div class="example contentBorder mb-30 row">
+
+				<!--start simple input-->
+				<div class="field col-4">
+					<label class="text-grey block mb-10">Simple input:</label>
+					<input type="text" placeholder="placeholder">
+				</div>
+				<!--end simple input-->
+
+				<!--start quantity input-->
+				<div class="field col-4">
+					<label class="text-grey block mb-10">Quantity input:</label>
+					<input type="text" placeholder="10">
+					<div class="quantity-nav">
+						<div class="quantity-button quantity-up">
+							<i aria-hidden="true" class="fa fa-angle-up"></i>
+						</div>
+						<div class="quantity-button quantity-down">
+							<i aria-hidden="true" class="fa fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+				<!--end quantity input-->
+
+
+			</div>
+			<pre><code #code6 class="html">&lt;!--start simple input--&gt;<br />&lt;div class="field"&gt;<br />    &lt;label class="text-grey block"&gt;Simple input:&lt;/label&gt;<br />    &lt;input type="text" placeholder="placeholder"&gt;<br />&lt;/div&gt;<br />&lt;!--end simple input--&gt;<br /><br />&lt;!--start quantity input--&gt;<br />&lt;div class="field"&gt;<br />    &lt;label class="text-grey block"&gt;Quantity input:&lt;/label&gt;<br />    &lt;input type="text" placeholder="10 Minutes"&gt;<br />    &lt;div class="quantity-nav"&gt;<br />        &lt;div class="quantity-button quantity-up"&gt;<br />            &lt;i aria-hidden="true" class="fa fa-angle-up"&gt;&lt;/i&gt;<br />        &lt;/div&gt;<br />        &lt;div class="quantity-button quantity-down"&gt;<br />            &lt;i aria-hidden="true" class="fa fa-angle-down"&gt;&lt;/i&gt;<br />        &lt;/div&gt;<br />    &lt;/div&gt;<br />&lt;/div&gt;<br />&lt;!--end quantity input--&gt;</code></pre>
+		</div>
+		<!--end Inputs-->
+
+		<!--start Checkboxes-->
+		<div class="article">
+			<h3 class="mb-30">Checkboxes</h3>
+			<p class="font-sm">Checkboxes are used if you want the user to select any number of options from a list of preset options.
+				To create a checkbox you need to add <code class="class">checkbox</code> class to <code  class="tag">&lt;div&gt;</code>. Here are described the enabled/disabled checkboxes.<br> Add the disabled attribute to the <code  class="tag">&lt;input&gt;</code> and the custom indicator and label description. Add the <code class="attribute">checked</code> attribute to the <code class="tag">&lt;input&gt;</code> and the custom indicator and label description.</p>
+			<div class="example contentBorder mb-30 row">
+
+				<!--start custom checkbox-->
+				<div class="checkbox col-2">
+					<label class="flex">
+						<input type="checkbox">
+						<span class="checkIcon"><i class="fa fa-check"></i></span>
+						<span class="label">custom checkbox</span>
+					</label>
+				</div>
+				<!--end custom checkbox-->
+
+				<!--start checked checkbox-->
+				<div class="checkbox col-2">
+					<label class="flex">
+						<input type="checkbox" checked>
+						<span class="checkIcon"><i class="fa fa-check"></i></span>
+						<span class="label">checked checkbox</span>
+					</label>
+				</div>
+				<!--end checked checkbox-->
+
+				<!--start disabled checkbox-->
+				<div class="checkbox col-2">
+					<label class="flex">
+						<input type="checkbox" disabled>
+						<span class="checkIcon"><i class="fa fa-check"></i></span>
+						<span class="label">disabled checkbox</span>
+					</label>
+				</div>
+				<!--end disabled checkbox-->
+
+			</div>
+			<pre><code #code12 class="html">&lt;!--start custom checkbox--&gt;<br />&lt;div class="checkbox"&gt;<br />    &lt;label class="flex"&gt;<br />        &lt;input type="checkbox"&gt;<br />        &lt;span class="checkIcon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt;<br />        &lt;span class="label"&gt;custom checkbox&lt;/span&gt;<br />    &lt;/label&gt;<br />&lt;/div&gt;<br />&lt;!--end custom checkbox--&gt;<br /><br />&lt;!--start checked checkbox--&gt;<br />&lt;div class="checkbox"&gt;<br />    &lt;label class="flex"&gt;<br />        &lt;input type="checkbox" checked&gt;<br />        &lt;span class="checkIcon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt;<br />        &lt;span class="label"&gt;checked checkbox&lt;/span&gt;<br />    &lt;/label&gt;<br />&lt;/div&gt;<br />&lt;!--end checked checkbox--&gt;<br /><br />&lt;!--start disabled checkbox--&gt;<br />&lt;div class="checkbox"&gt;<br />    &lt;label class="flex"&gt;<br />        &lt;input type="checkbox" disabled&gt;<br />        &lt;span class="checkIcon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt;<br />        &lt;span class="label"&gt;disabled checkbox&lt;/span&gt;<br />    &lt;/label&gt;<br />&lt;/div&gt;<br />&lt;!--end disabled checkbox--&gt;</code></pre>
+
+
+		</div>
+		<!--end Checkboxes-->
+
+		<!--start Radios-->
+		<div class="article">
+			<h3 class="mb-30">Radios</h3>
+			<p class="font-sm">To create a radiobutton you need to add <code class="class">radioBtn</code> class to <code  class="tag">&lt;div&gt;</code>.To select the radiobutton you need to add the <code class="attribute">checked</code> attribute to the <code class="tag">&lt;input&gt;</code> and the custom indicator and label description.</p>
+			<div class="example contentBorder mb-30 row">
+
+				<!--start custom radio-->
+				<div class="checkbox col-2">
+					<div class="radioBtn" (click)="onChangeMinutes(5)">
+						<input type="radio" id="customRadio" name="time">
+						<label for="customRadio">custom radio</label>
+					</div>
+				</div>
+				<!--end custom radio-->
+
+				<!--start checked radio-->
+				<div class="checkbox col-2">
+					<div class="radioBtn" (click)="onChangeMinutes(5)">
+						<input type="radio" id="checked" name="time" checked>
+						<label for="checked">checked radio</label>
+					</div>
+				</div>
+				<!--end checked radio-->
+
+			</div>
+			<pre><code #code17 class="html">&lt;!--start custom radio--&gt;<br />&lt;div class="radioBtn" (click)="onChangeMinutes(5)"&gt;<br />    &lt;input type="radio" id="customRadio" name="time"&gt;<br />    &lt;label for="customRadio"&gt;custom radio&lt;/label&gt;<br />&lt;/div&gt;<br />&lt;!--end custom radio--&gt;<br /><br />&lt;!--start checked radio--&gt;<br />&lt;div class="radioBtn" (click)="onChangeMinutes(5)"&gt;<br />    &lt;input type="radio" id="checked" name="time" checked&gt;<br />    &lt;label for="checked"&gt;checked radio&lt;/label&gt;<br />&lt;/div&gt;<br />&lt;!--end checked radio--&gt;</code></pre>
+
+
+		</div>
+		<!--end Radios-->
+
+		<!--start switch-->
+		<div class="article">
+			<h3 class="mb-30">Switch</h3>
+			<p class="font-sm">To create a switch (on/off) you need to add <code class="class">switch</code> class to div.</p>
+			<div class="example contentBorder mb-30 row">
+
+				<!--start switch-->
+				<div class="switch">
+					<input id="switch" type="checkbox" checked/>
+					<label for="switch"></label>
+				</div>
+				<!--end switch-->
+
+			</div>
+			<pre><code #code19 class="html">&lt;!--start switch--&gt;<br />&lt;div class="switch"&gt;<br />    &lt;input id="switch" type="checkbox" checked/&gt;<br />    &lt;label for="switch"&gt;&lt;/label&gt;<br />&lt;/div&gt;<br />&lt;!--end switch--&gt;</code></pre>
+
+
+		</div>
+		<!--end switch-->
+
+		<!--start switch group-->
+		<div class="article">
+			<h3 class="mb-30">Switch Group</h3>
+			<p class="font-sm">To create group of switches you need to add <code class="class">SwitchGroup</code> class to the <code class="tag">&lt;ul&gt;</code> tag.</p>
+			<div class="example contentBorder mb-30 row">
+				<ul class="switchGroup col-6">
+					<li class="toggleParent">
+						<div>
+							<span>Group: Entree</span>
+							<div>
+								<div class="switch">
+									<input id="1" type="checkbox" />
+									<label for="1"></label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="toggleParent">
+						<div>
+							<span>Group: Entree</span>
+							<div>
+								<div class="switch">
+									<input id="2" type="checkbox" />
+									<label for="2"></label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="toggleParent">
+						<div>
+							<span>Group: Entree</span>
+							<div>
+								<div class="switch">
+									<input id="3" type="checkbox" />
+									<label for="3"></label>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!--end switch-->
+
+			</div>
+			<pre><code #code18 class="html">&lt;ul class="switchGroup col-6"&gt;<br />   &lt;li class="toggleParent"&gt;<br />      &lt;div&gt;<br />         &lt;span&gt;Group: Entree&lt;/span&gt;<br />         &lt;div&gt;<br />            &lt;div class="switch"&gt;<br />               &lt;input id="1" type="checkbox" /&gt;<br />               &lt;label for="1"&gt;&lt;/label&gt;<br />            &lt;/div&gt;<br />         &lt;/div&gt;<br />      &lt;/div&gt;<br />   &lt;/li&gt;<br />   &lt;li class="toggleParent"&gt;<br />      &lt;div&gt;<br />         &lt;span&gt;Group: Entree&lt;/span&gt;<br />         &lt;div&gt;<br />            &lt;div class="switch"&gt;<br />               &lt;input id="2" type="checkbox" /&gt;<br />               &lt;label for="2"&gt;&lt;/label&gt;<br />            &lt;/div&gt;<br />         &lt;/div&gt;<br />      &lt;/div&gt;<br />   &lt;/li&gt;<br />   &lt;li class="toggleParent"&gt;<br />      &lt;div&gt;<br />         &lt;span&gt;Group: Entree&lt;/span&gt;<br />         &lt;div&gt;<br />            &lt;div class="switch"&gt;<br />               &lt;input id="3" type="checkbox" /&gt;<br />               &lt;label for="3"&gt;&lt;/label&gt;<br />            &lt;/div&gt;<br />         &lt;/div&gt;<br />      &lt;/div&gt;<br />   &lt;/li&gt;<br />&lt;/ul&gt;</code></pre>
+		</div>
+		<!--end switch group-->
+
+
+	</div>
+</div>
